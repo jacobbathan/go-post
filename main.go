@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
+	"github.com/gookit/color"
 )
 
 func main() {
-	fmt.Println(" ~ HTTP REQUEST INIT ~ ")
+	color.White.Println(" ~ HTTP REQUEST INIT ~ ")
 	REQUEST_LINK := getConnectionString()
 
 	fmt.Println(REQUEST_LINK)
