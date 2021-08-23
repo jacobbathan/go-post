@@ -7,6 +7,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"reflect"
 )
 
 func main() {
@@ -57,6 +58,12 @@ func makeRequest(URL string) {
 	}
 
 	color.Red.Println("HTTP RESPONSE FROM URL")
+
+	fmt.Println(reflect.TypeOf(response.Header))
+	for name, value := range response.Header {
+		fmt.Printf("%v: %v\n", name, value)
+	}
+
 	fmt.Println(string(body))
 
 }
