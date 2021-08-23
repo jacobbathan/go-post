@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/gookit/color"
+	"github.com/spf13/cobra"
 	"io/ioutil"
 	"log"
 	"net/http"
